@@ -46,6 +46,7 @@ Las imagenes fueron obtenidas de varios sitios web de venta de componentes.
 
 .nav {
 
+    display: flex;
     position: relative;
     top: calc(100% + 10px);
     height: 100%;
@@ -54,6 +55,8 @@ Las imagenes fueron obtenidas de varios sitios web de venta de componentes.
     padding-left: 0px;
     background-color: transparent;
     text-align: center;
+    flex-direction: row;
+    justify-content: center
 }
 
 .nav li {
