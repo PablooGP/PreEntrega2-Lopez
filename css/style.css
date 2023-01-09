@@ -72,16 +72,20 @@ Las imagenes fueron obtenidas de varios sitios web de venta de componentes.
 
 
 .website-logov2 {
-    width: 210px;
+    width: 20%;
     height: 70px;
     background-image: url("../assets/img/logositioweb.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    object-fit: contain;
     position: absolute;
-    left: -400px;
-    top: -10px;
+    left: 2.5%;
+    top: 15px;
     z-index: 35;
+
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
 }
 
 .input-barra-busqueda {
@@ -150,10 +154,10 @@ Las imagenes fueron obtenidas de varios sitios web de venta de componentes.
 }
 
 .aviso-importante {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 40px;
-    top: 110px;
+    top: 10px;
 
     display: grid;
     font-family: 'Inter';
@@ -177,6 +181,7 @@ Las imagenes fueron obtenidas de varios sitios web de venta de componentes.
     height: 100%;
     top: calc(100% - 30px);
     background-color: rgb(194, 74, 0);
+    z-index: 50;
 }
 
 footer {
@@ -188,7 +193,8 @@ footer {
     padding: 0px;
     background-color: transparent;
     /*box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);*/
-    background-color: transparent
+    background-color: transparent;
+    z-index: 50;
 }
 
 .footer-lista {
@@ -730,7 +736,7 @@ footer {
     text-align: center;
 }
 
-/*
+
 .banner-fondo {
     position: relative;
     background-color: #170453;
@@ -740,7 +746,7 @@ footer {
     width: 100%;
 }
 
-.banner-imagen {
+/*.banner-imagen {
     margin: auto;
     width: 1215px;
     height: 100%;
@@ -754,6 +760,26 @@ footer {
     background-image: url('../assets/img/banner.png');
 }*/
 
+.banner-imagen{
+    margin: auto;
+    width: 100%;
+    height: 1500px;
+    top: 20px;
+    background-color: transparent;
+    display: block;
+    fill-opacity: 0%;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    position: relative;
+    background-image: url('../assets/img/banner.png') 
+}
+
+.yt-video {
+    width: 750px;
+    height: 400px;
+}
 @media (max-width: 576px) {
     .topbar {
         background-color: rgb(255, 96, 0);
@@ -945,5 +971,33 @@ footer {
     .yt-video {
         width: 97%;
         height:320px;
+    }
+
+    .componentes-flexbox {
+
+        position: relative;
+        top: 20px;
+        width: 100%;
+        height: 1420px;
+        display: flex;
+    
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-flow: column wrap;
+        align-content: center;
+        align-items: center;
+        background-color: transparent;
+        z-index: 5;
+    
+        margin: auto;
+        max-width: 1450px;
+    
+    }
+
+    .componente1 {
+        width: 230px;
+        height: 230px;
+        background-color: transparent;
+        outline: #000000;
     }
 }
